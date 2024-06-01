@@ -30,7 +30,7 @@ public class ModCreativeModTabs {
 
     public static final RegistryObject<CreativeModeTab> BITON_CRAZY_STUFF=CREATIVE_MODE_TAB.register("biton_crazy_stuff",
             ()->CreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.ANTI_GAY.get()))
-                    .title(Component.translatable("Biton Crazy Stuff"))
+                    .title(Component.translatable("creativetab.biton_crazy_stuff"))
                     .displayItems((pParameters,pOutPut)->{
                         //items
 
@@ -38,6 +38,7 @@ public class ModCreativeModTabs {
 
                         //blocks
                         pOutPut.accept(ModBlocks.ANTI_GAY.get());
+                        pOutPut.accept(ModBlocks.NAZI_BLOCK.get());
                     })
                     .build());
 
